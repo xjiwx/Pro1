@@ -12,9 +12,6 @@ class Login(object):
         driver.implicitly_wait(1)
         driver.get('http://novel.hctestedu.com/?to=pc')
 
-
-
-
         driver.find_element(By.CLASS_NAME, 'mr15').click()
         driver.find_element(By.ID, 'txtUName').send_keys(username)
         driver.find_element(By.ID, 'txtPassword').send_keys(password)
